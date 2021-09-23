@@ -1,0 +1,28 @@
+.container{
+    background-color: #FFFFFF;
+    position: relative;
+    width: 100hw;
+    height: 90px;
+    
+    
+}
+.dog{
+    
+    }
+.header{
+    display: flex;
+    margin-left: 122px;
+    position: absolute;
+    position: absolute;
+    top: 50%;
+    left:0px;
+    transform: translate(-0%, -50%);   
+ }
+ .saltpeter{
+    font-family: 'Pacifico', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 30px;
+    color:#808080;
+ }
