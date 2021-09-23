@@ -1,22 +1,62 @@
 .container{
     background-color: #FFFFFF;
-    position: relative;
-    width: 100hw;
+      
     height: 90px;
+    display: flex;
+    justify-content: space-around;
     
     
+}
+.sidelinkContainer{
+    position: absolute;
+    top:70px;
+    width: 50%;
+    right: 2%;
+    
+    z-index: 3;
+    list-style: none;
+}
+.sidelink{
+    
+    text-align: center;
+    background-color:white ;
+    opacity: .8;
+    padding: 20px;
+    margin-top: 10px;
+    font-family: 'Overpass', sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    cursor: pointer;
+    visibility: hidden;
+    z-index: 2;
+    cursor: pointer;
+    color:#808080;
+    box-shadow: black 2px 2px 10px;
+    transition-duration: .2s;
+    transition-timing-function: linear;
+    
+}
+.sidelink:hover{
+    background-color: #1791A0;
+    color: white;
 }
 .dog{
     
     }
+.burger{
+    display: none;
+}
 .header{
     display: flex;
-    margin-left: 122px;
-    position: absolute;
-    position: absolute;
+    margin-left: 0px;
+    align-items: center;
+    cursor: pointer;
+    
+    
+/*     
     top: 50%;
     left:0px;
-    transform: translate(-0%, -50%);   
+    transform: translate(-0%, -00%);    */
  }
  .saltpeter{
     font-family: 'Pacifico', cursive;
@@ -26,3 +66,88 @@
     line-height: 30px;
     color:#808080;
  }
+ .navLinks{
+     list-style: none;
+     display: flex;
+     padding-top: 4px;
+     align-items: center;
+     width: 50%;
+     float: right;
+     justify-content: space-between;
+     font-size: 13px;
+     line-height: 13px;
+     font-family: 'Overpass', sans-serif;
+     
+}
+.navItems{
+    color: #808080 ;
+    opacity: .7;
+    cursor: pointer;
+    
+    
+}
+.searchIcon{
+    color: #808080 ;
+    opacity: .7;
+    cursor: pointer;
+    
+    
+}
+
+.navItems::after{
+    content: "";
+    display: flex;
+    height: 2px;
+    background-color: black;
+    width: 0%;
+    margin-top: 2px;
+    
+}
+.navItems:hover::after{
+    content: "";
+    display: flex;
+    height: 2px;
+    background-color: #1791A0;
+    width: 100%;
+    transition-duration: .3s;
+    
+}
+.home{
+    color: #1791A0;
+    cursor: pointer;
+}
+.home::after{
+    content: "";
+    display: flex;
+    height: 2px;
+    background-color: black;
+    width: 0%;
+    margin-top: 2px;
+    
+}
+.home:hover::after{
+    content: "";
+    display: flex;
+    height: 2px;
+    background-color: #1791A0;
+    width: 100%;
+    transition-duration: .3s;
+    
+}
+@media (min-width: 800px) and (max-width: 1250px) {
+   
+    .navLinks{
+        width: 75%;
+        background-color: blueviolet;
+    }
+  }
+  @media only screen and (max-width: 800px){
+    .navLinks{
+        display: none;
+    
+    }
+    .burger{
+        display: flex;
+        cursor: pointer;
+    }
+  }  
