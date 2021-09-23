@@ -16,9 +16,10 @@
     z-index: 3;
     list-style: none;
 }
+
 .sidelink{
-    
-    text-align: center;
+    display: flex;
+    justify-content: center;
     background-color:white ;
     opacity: .8;
     padding: 20px;
@@ -90,7 +91,28 @@
     color: #808080 ;
     opacity: .7;
     cursor: pointer;
+    display: flex;
+    position: relative;
+    border: rgb(88, 88, 88) 1px;
+    margin-top: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
     
+    
+    
+}
+.input{
+    position: absolute;    
+    z-index: -1;
+    border-radius: 20px;
+    width: 130px;
+    margin-left: 10px;
+    margin-top: -4px;
+    
+    
+    
+}
+.inputContainer{
     
 }
 
@@ -138,7 +160,7 @@
    
     .navLinks{
         width: 75%;
-        background-color: blueviolet;
+        
     }
   }
   @media only screen and (max-width: 800px){
@@ -146,8 +168,20 @@
         display: none;
     
     }
+    .input{
+        position: relative;  
+        z-index: -1;
+        border-radius: 20px;
+               
+         
+        
+        
+    }
     .burger{
         display: flex;
         cursor: pointer;
+    }
+    .searchIcon{
+        padding-left: 10px;
     }
   }  

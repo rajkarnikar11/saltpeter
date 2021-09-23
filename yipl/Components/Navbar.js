@@ -5,8 +5,9 @@ import styles from '../styles/Navbar.module.css'
 import Image from 'next/dist/client/image';
 const Navbar = () => {
     const [dropDown, setDropDown] = useState(false);
+    const [ssearch, setSsearch] = useState(false);
     let head=useRef(null);
-    
+    let search= useRef(null);
     let side= useRef(null);
     let side1= useRef(null);
     let side2= useRef(null);
@@ -45,6 +46,14 @@ const Navbar = () => {
         setDropDown(true);              
     
     }
+    const come =()=>{
+        gsap.to(search,.2,{x:0})
+        setSsearch(true);
+    }
+    const go =()=>{
+        gsap.to(search,.2,{x:200})
+        setSsearch(false);
+    }
     const shrink =()=>{
         gsap.to(side5,.2, {y:-700,delay:.3, ease:Power3.easeInOut} )
         gsap.to(side4,.2, {y:-700,delay:.4, ease:Power3.easeInOut} )
@@ -60,7 +69,8 @@ const Navbar = () => {
     }
     useEffect(()=>{
         gsap.timeline().to(side,0, {y:-700,}  );
-        tl.fromTo(head,.2, {y:-700,rotation:0},{y:20,rotation:0})
+        gsap.timeline().to(search,0, {x:200}  );
+        tl.fromTo(head,.4, {y:-700,rotation:-50},{y:20,rotation:-15})
         .to(head,.2, {y:-10,rotation:0})
         .to(head,.1, {rotation:-10 ,y:0})
         .to(head,.2, {rotation:0})
@@ -86,13 +96,18 @@ const Navbar = () => {
             </div>
             <ul ref={el=>side=el} className={styles.sidelinkContainer}>
                 <li ref={el=>side1=el} className={styles.sidelink}><Link href="/">Home</Link> </li>
-                <li ref={el=>side2=el} className={styles.sidelink}><Link href="#skills">Skills</Link></li>
-                <li ref={el=>side3=el} className={styles.sidelink}><Link href="#tools">Tools</Link></li>
-                <li ref={el=>side4=el} className={styles.sidelink}><Link href="">Contact</Link></li>
-                <li ref={el=>side5=el} className={styles.sidelink}><Link href="">Work</Link></li>
-                <li ref={el=>side6=el} className={styles.sidelink}><Link href="">Work</Link></li>
-                <li ref={el=>side7=el} className={styles.sidelink}><Link href="">Work</Link></li>
-                <li ref={el=>side8=el} className={styles.sidelink}><Link href="">Work</Link></li>
+                <li ref={el=>side2=el} className={styles.sidelink}><Link href="#skills">About Us+</Link></li>
+                <li ref={el=>side3=el} className={styles.sidelink}><Link href="#tools">News and Events+</Link></li>
+                <li ref={el=>side4=el} className={styles.sidelink}><Link href="">Gallery</Link></li>
+                <li ref={el=>side5=el} className={styles.sidelink}><Link href="">Resources+</Link></li>
+                <li ref={el=>side6=el} className={styles.sidelink}><Link href="">Project</Link></li>
+                <li ref={el=>side7=el} className={styles.sidelink}><Link href="">Contacts</Link></li>
+                <li ref={el=>side8=el} className={styles.sidelink}>
+                    <input className={styles.input}></input>
+                    <div className={styles.searchIcon}>
+                        <Image   src="/assets/svgs/searchicon.svg" height="15px" width="15px" alt="search" />
+                    </div>
+                </li>
             </ul>
             <ul className={styles.navLinks}>
                 <li className={styles.home}>HOME</li>
@@ -102,8 +117,16 @@ const Navbar = () => {
                 <li className={styles.navItems}>Resources+</li>
                 <li className={styles.navItems}>Project</li>
                 <li className={styles.navItems}>Contacts</li>
-                <li className={styles.navItems}>Gallery</li>
-                <li className={styles.searchIcon}><Image   src="/assets/svgs/searchicon.svg" height="15px" width="15px" alt="search" /></li>
+                
+                
+                <li  className={styles.searchIcon}>
+                    <Image  onClick={ssearch ==false ? come : go} src="/assets/svgs/searchicon.svg" height="15px" width="15px" alt="search" />
+                    <li ref={el=>search=el} className={styles.inputContainer} >
+                        <input className={styles.input}></input>
+                    </li>
+                </li>
+                    
+                
             </ul>
             
             
