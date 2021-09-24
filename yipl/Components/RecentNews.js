@@ -58,7 +58,7 @@ function RecentNews() {
                                     </p>
                                 </div>
                             </div>
-                            <h1 className={styles.overlayheader}>    FThousands of street dogs in Mauritius visit paradise KTM’s first ever spay/neuter clinic as </h1>
+                            <h1 className={styles.overlayheader}>    Thousands of street dogs in Mauritius visit paradise KTM’s first ever spay/neuter clinic as </h1>
                             <div className={styles.readcontainer}>
                                 <Image  src="/assets/svgs/chevron2.svg" alt="heroimage" height="16px" width="16px" />
                                 <p className={styles.readmore}>

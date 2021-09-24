@@ -7,6 +7,9 @@
 }
 .container:hover{
     box-shadow: rgb(12, 12, 12,.5) 3px 5px 8px;
+    /* transform: scale(1.05); */
+    transform: translate(-0px, -50px);
+    transition-duration: .3s;
 }
 .iconcontainer{
     display: flex;
