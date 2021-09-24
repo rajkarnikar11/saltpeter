@@ -30,7 +30,7 @@ function RecentProject() {
                     <div style={{display:"flex"}}>
                         <div className={styles.line} />
                         <div>
-                            <h1 className={styles.header} >Recent Project.</h1>
+                            <h1 className={styles.header1} >Recent Project.</h1>
                             <p1 className={styles.desc}> Meet some of the dogs helped by The Saltpeater Organization. We provide grants and other funding to pay expenses, such as medical care, so the wonderful organizations </p1>
                             
                         </div>
@@ -143,11 +143,11 @@ function RecentProject() {
                         </div>
                     </div>
                     <div className={styles.viewmore}>
-                                <Image  src="/assets/svgs/chevron2.svg" alt="heroimage" height="16px" width="16px" />
-                                <p className={styles.readmore}>
-                                    View More Projects
-                                </p>
-                            </div>
+                        <Image  src="/assets/svgs/chevron2.svg" alt="heroimage" height="16px" width="16px" />
+                        <p className={styles.readmore}>
+                            View More Projects
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>

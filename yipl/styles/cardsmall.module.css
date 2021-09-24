@@ -1,0 +1,24 @@
+.container{
+    height: 314px;
+    width: 276px;
+    box-shadow: rgb(12, 12, 12,.5) 3px 5px 8px;
+    transition-duration: .3s;
+    margin-bottom: 25px;
+}
+.container:hover{
+    transform: scale(1.08);
+}
+.header{
+    font-family: Overpass;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    /* or 140% */
+
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+    padding: 0px 16px 16px 16px;
+}

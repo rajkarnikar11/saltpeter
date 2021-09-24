@@ -48,6 +48,7 @@
     background-color: rgba(7, 7, 7, 0.6);
     z-index: 2;
     opacity: 0;
+    transition-duration: .3s;
 }
 .dogoverlaytextheader{
     position: absolute;
@@ -99,7 +100,7 @@
     width: 80%;
     display: flex;
     align-items: center;
-
+    transition-duration: .3s;
     color: #DFDFDF;
 }
 .dogoverlaytime{
@@ -111,10 +112,12 @@
     opacity: .7;
     font-size: 12px;
     line-height: 20px;
+    transition-duration: .5s;
 }
 
 .dogoverlay:hover{
     opacity: .9;
+    transition-duration: .5s;
 }
 .dogcontainer{
     width: 574px;
@@ -123,6 +126,7 @@
     margin-top: 40px;
     box-shadow: rgb(12, 12, 12,.8) 3px 5px 6px;
     cursor: pointer;
+    transition-duration: .5s;
    
     
 }
@@ -192,20 +196,41 @@
     }
     .partation2{
         display: block;
+        padding: 10px;
+        width: 100%;
+        margin: auto;
     }
     .left1{
         display: flex;
         width: 100%;
         padding-right: 0px;
+        justify-content: center;
     }
     .right1{
         
         width: 100%;
     }
     .left2{
-        width: 100%;
+        margin-left: 0px;
+        
+        display: block;
+        justify-content: center;
     }
     .left2{
         width: 100%;
+    }
+    .dogright{
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        box-shadow: none;
+    }
+    .right2{
+        width: 100%;
+    }
+    .dogcontainer{
+        
+        margin: auto;
+        margin-top: 30px;
     }
 }
