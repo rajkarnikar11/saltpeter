@@ -1,0 +1,128 @@
+.container{
+    
+}
+.header1{
+    font-family: Overpass;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 44px;
+    /* identical to box height, or 122% */
+
+
+    color: #000000;
+    }
+.plus{
+    position: absolute;
+    left: 0;
+    bottom:0;
+    z-index: 9;
+    width: 60px;
+    height: 60px;
+}
+.partation2{
+    padding-top:70px ;
+    padding-left: 122px;
+    padding-right: 122px;
+    display: flex;
+    background-color: #F8F8F8;
+}
+.left2{
+    width: 50%;
+    
+}
+.right2{
+    width: 50%;
+}
+.dogoverlay{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    width: 574px;
+    height: 475px;
+    background-color: rgb(255, 255, 255,.6);
+    z-index: 2;
+    opacity: 0;
+}
+.dogoverlay:hover{
+    opacity: .8;
+}
+.dogcontainer{
+    width: 574px;
+    height: 475px;
+    position: relative;
+    margin-top: 30px;
+    box-shadow: rgb(12, 12, 12,.8) 3px 5px 6px;
+    cursor: pointer;
+    
+}
+.desc{
+    font-family: Overpass;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    /* or 140% */
+
+    display: flex;
+    align-items: center;
+
+    color: #808080;
+}
+.readmore{
+
+
+    font-family: Overpass;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    /* identical to box height, or 100% */
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #000000;
+}
+.partation1{
+    display: flex;
+    padding: 122px;
+}
+.line{
+    width: 200px;
+    height: 0px;
+    margin-right: 15px;
+    margin-top: 44px;
+    border: 1px solid #1791A0;
+    background-color: #1791A0;
+}
+.left1{
+    
+    width: 50%;
+    padding-right: 15px;
+}
+.right1{
+    
+    margin-left: 5px;
+    width: 50%;
+}
+@media only screen and (max-width: 800px){
+    .partation1{
+        display: block;
+    }
+    .partation2{
+        display: block;
+    }
+    .left1{
+        display: flex;
+        width: 100%;
+        padding-right: 0px;
+    }
+    .right1{
+        
+        width: 100%;
+    }
+}

@@ -102,8 +102,8 @@ const Navbar = () => {
                 <li ref={el=>side5=el} className={styles.sidelink}><Link href="">Resources+</Link></li>
                 <li ref={el=>side6=el} className={styles.sidelink}><Link href="">Project</Link></li>
                 <li ref={el=>side7=el} className={styles.sidelink}><Link href="">Contacts</Link></li>
-                <li ref={el=>side8=el} className={styles.sidelink}>
-                    <input className={styles.input}></input>
+                <li ref={el=>side8=el} className={styles.sidelink}>                       
+                    <input className={styles.input} placeholder="Search..."></input>                    
                     <div className={styles.searchIcon}>
                         <Image   src="/assets/svgs/searchicon.svg" height="15px" width="15px" alt="search" />
                     </div>
@@ -122,7 +122,7 @@ const Navbar = () => {
                 <li  className={styles.searchIcon}>
                     <Image  onClick={ssearch ==false ? come : go} src="/assets/svgs/searchicon.svg" height="15px" width="15px" alt="search" />
                     <li ref={el=>search=el} className={styles.inputContainer} >
-                        <input className={styles.input}></input>
+                        <input className={styles.input} placeholder="Search..."></input>
                     </li>
                 </li>
                     
