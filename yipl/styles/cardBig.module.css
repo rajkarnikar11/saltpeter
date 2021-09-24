@@ -1,0 +1,62 @@
+.container{
+    height: 398px;
+    width: 372px;
+    box-shadow: rgb(12, 12, 12,.5) 3px 5px 8px;
+}
+.carddate{
+    font-family: Overpass;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    /* identical to box height, or 100% */
+
+    display: flex;
+    align-items: center;
+    padding-left: 24px ;
+    padding-top: 10px;    
+    color: #808080;
+}
+.title{
+    font-family: Overpass;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 32px;
+    /* or 133% */
+
+    display: flex;
+    align-items: center;
+    padding-left: 24px ;
+    padding-right: 24px;
+    color: #000000;
+
+}
+.line{
+    width: 372px;
+    height: 0px;
+    left: 122px;
+    top: 3392px;
+    background-color: #CCCCCC;
+    border: 1px solid #CCCCCC;
+}
+.tagContainer{
+    display: flex;
+    
+    
+    
+}
+.tag{
+    padding-left: 24px;
+    font-family: Overpass;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 65px;
+    /* identical to box height, or 100% */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+    color: #1791A0;
+}

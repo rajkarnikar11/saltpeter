@@ -1,5 +1,6 @@
 .container{
     
+    
 }
 .header1{
     font-family: Overpass;
@@ -21,6 +22,7 @@
     height: 60px;
 }
 .partation2{
+    padding-bottom:70px ;
     padding-top:70px ;
     padding-left: 122px;
     padding-right: 122px;
@@ -40,23 +42,88 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
+    font-family: 'Montserrat', sans-serif;
     width: 574px;
     height: 475px;
-    background-color: rgb(255, 255, 255,.6);
+    background-color: rgba(7, 7, 7, 0.6);
     z-index: 2;
     opacity: 0;
 }
+.dogoverlaytextheader{
+    position: absolute;
+    font-family: Overpass;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 38px;
+    /* or 127% */
+    color: white;
+    display: flex;
+    top:117px;
+    left: 32px;
+    text-align: left;
+
+}
+.dogreadmore{
+    margin-left: 7px;
+}
+.dogoverlayreadmore{
+    position: absolute;
+    left: 32px;
+    top:330px;
+    font-family: Overpass;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+
+    display: flex;
+    align-items: center;
+
+    color: #DFDFDF;
+    display: flex;
+}
+.dogoverlaytextpara{
+    left:32px;
+    top:260px;
+    position: absolute;
+    
+    text-align: left;
+    font-family: Overpass;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+    width: 80%;
+    display: flex;
+    align-items: center;
+
+    color: #DFDFDF;
+}
+.dogoverlaytime{
+    color: white;
+    top:220px;
+    display: flex;
+    position: absolute;
+    left: 32px;
+    opacity: .7;
+    font-size: 12px;
+    line-height: 20px;
+}
+
 .dogoverlay:hover{
-    opacity: .8;
+    opacity: .9;
 }
 .dogcontainer{
     width: 574px;
     height: 475px;
     position: relative;
-    margin-top: 30px;
+    margin-top: 40px;
     box-shadow: rgb(12, 12, 12,.8) 3px 5px 6px;
     cursor: pointer;
+   
     
 }
 .desc{
@@ -66,7 +133,7 @@
     font-size: 20px;
     line-height: 28px;
     /* or 140% */
-
+    box-shadow: black;
     display: flex;
     align-items: center;
 
@@ -90,6 +157,7 @@
 .partation1{
     display: flex;
     padding: 122px;
+    padding-bottom:70px ;
 }
 .line{
     width: 200px;
@@ -104,12 +172,21 @@
     width: 50%;
     padding-right: 15px;
 }
+.viewmore{
+    display: flex;
+    margin-top: 20px;
+}
 .right1{
     
     margin-left: 5px;
     width: 50%;
 }
-@media only screen and (max-width: 800px){
+.dogright{
+    width: 570px;
+    height: 434px;
+    box-shadow: rgb(12, 12, 12,.8) 3px 5px 6px;
+}
+@media only screen and (max-width: 1250px){
     .partation1{
         display: block;
     }
@@ -123,6 +200,12 @@
     }
     .right1{
         
+        width: 100%;
+    }
+    .left2{
+        width: 100%;
+    }
+    .left2{
         width: 100%;
     }
 }

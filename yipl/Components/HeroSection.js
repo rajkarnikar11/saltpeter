@@ -57,7 +57,7 @@ function HeroSection() {
                 Researchers explore impact of obesity on dog’s health
                 </h1>
                 <div style={{display:"flex"}}>
-                    <Image  src="/assets/svgs/clock.svg" alt="heroimage" height="12.19px" width="12.19px" />
+                    <Image  src="/assets/svgs/clock.svg" alt="cl0ck" height="12.19px" width="12.19px" />
                     <p className={styles.date}>
                         Aug 31, 2014
                     </p>
