@@ -63,6 +63,7 @@
     padding-left: 32px;
     padding-right: 32px;
     background: rgba(22, 22, 22, 0.8);
+    transition-duration: .3s;
     opacity: 0;
 }
 .recentoverlay:hover{

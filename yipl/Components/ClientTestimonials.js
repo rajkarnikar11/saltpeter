@@ -31,11 +31,11 @@ function ClientTestimonials() {
                         "disableOnInteraction": false
                     }}
                     loop={true}
-                    // pagination={{
+                    pagination={{
                         
-                    //     clickable:true,
-                    //     bulletClass: `swiper-pagination-bullet `
-                    // }}
+                        clickable:true,
+                        bulletClass: `swiper-pagination-bullet `
+                    }}
                     className="swiper-pagination-black"
                             
                     >
@@ -60,15 +60,15 @@ function ClientTestimonials() {
                     effect="coverflow"
                     slidesPerView={1}
                     autoplay={{
-                        "delay": 5000,
+                        "delay": 3000,
                         "disableOnInteraction": false
                     }}
                     loop={true}
-                    // pagination={{
+                    pagination={{
                         
-                    //     clickable:true,
-                    //     bulletClass: `swiper-pagination-bullet `
-                    // }}
+                        clickable:true,
+                        bulletClass: `swiper-pagination-bullet `
+                    }}
                     className="swiper-pagination-black"
                             
                     >

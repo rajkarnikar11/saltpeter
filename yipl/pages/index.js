@@ -7,6 +7,7 @@ import Navbar from '../Components/Navbar'
 import OurTeam from '../Components/OurTeam'
 import RecentNews from '../Components/RecentNews'
 import RecentProject from '../Components/RecentProject'
+import TrustedPartners from '../Components/TrustedPartners'
 import UpcommingEvents from '../Components/UpcommingEvents'
 import styles from '../styles/Index.module.css'
 
@@ -22,6 +23,7 @@ function index() {
       <OurTeam/>
       <Gallery/>
       <ClientTestimonials/>
+      <TrustedPartners/>
     </div>
   )
 }

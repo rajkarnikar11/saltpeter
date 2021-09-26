@@ -1,0 +1,138 @@
+.container{
+
+    position: relative;
+}
+.box{
+    width: 276px;
+    height: 138px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+}
+.boxlogo{
+    
+    
+}
+.boxcontainer{
+    position: absolute;
+    top:172px;
+    padding-left: 122px;
+    padding-right: 122px;
+    display: flex; 
+    justify-content:space-between;
+    
+    width: 100%;
+    
+    
+}
+.desc{
+    font-family: Overpass;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    /* or 150% */
+
+
+    color: #808080;
+}
+.header1{
+    font-family: Overpass;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 44px;
+    /* identical to box height, or 122% */
+
+
+    color: #000000;
+    }
+.boxheader{
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    font-family: Overpass;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    /* identical to box height, or 100% */
+
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+
+    color: #3A3738;
+}
+.topcontainer{
+    display: flex;
+    height: 262px;
+    padding: 122px;
+    background-color: #F8F8F8;
+    align-items: center;
+}
+.botcontainer{
+    padding: 122px;
+    background-color: white;
+    display: flex;
+    
+}
+.line{
+    width: 115px;
+    height: 2px;
+    margin-right: 15px;
+    margin-top: 0px;
+    
+    background-color: #1791A0;
+
+}
+.line2{
+    width: 115px;
+    height: 3px;
+    margin-right: 15px;
+    margin-top: 45px;
+    
+    background-color: #1791A0;
+
+}
+.right{
+    width: 50%;
+}
+.left{
+    width: 50%;
+    display: block;
+}
+@media only screen and (max-width: 800px){
+    .boxcontainer{
+        
+        
+        
+        display: flex;
+        padding: 20px;
+         
+        justify-content: space-between;
+        
+        width: 100%;
+        
+        
+    }  
+    .box{
+        width: 100px;
+        text-align: center;
+    }
+    .boxheader{
+        
+        font-size: 15px;
+        line-height: 20px;
+        /* identical to box height, or 100% */
+    
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+    
+        color: #3A3738;
+    }
+}
