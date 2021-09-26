@@ -43,9 +43,35 @@ function TrustedPartners() {
                             
                         
                     </div>   
-                <div className={styles.cardcontainer}>
-                    <ResourceCard/>
-                </div>                     
+                    <div className={styles.cardcontainer}>
+                        <ul className={styles.navcontainer2}>
+                            <li className={styles.navlinks}>All</li>
+                            <li className={styles.navlinks}> Training</li>
+                            <li className={styles.navlinks}>Health & Wellness</li>
+                            <li className={styles.navlinks}>Home Remedies</li>
+                            <li className={styles.navlinks}>Street Story</li>
+                        </ul>
+                        <ResourceCard image="/assets/book1.png" desc="New Humanitarianism and the Crisis of Charity: Good Intentions on the Road to " date="Nov 30, 2018" header="New Humanitarianism and the Crisis of Charity"/>
+                        <ResourceCard image="/assets/book2.png" desc="Power and Charity: Early History of the Tung Wah Hospital, Hong Kong (East " date="Nov 30, 2018" header="Power and Charity"/>
+
+                    </div>                     
+                </div>
+                <div className={styles.right}>
+                    <ul className={styles.navcontainer1}>
+                        <li className={styles.navlinks}>All</li>
+                        <li className={styles.navlinks}> Training</li>
+                        <li className={styles.navlinks}>Health & Wellness</li>
+                        <li className={styles.navlinks}>Home Remedies</li>
+                        <li className={styles.navlinks}>Street Story</li>
+                    </ul>
+                    <ResourceCard image="/assets/book3.png" desc="This review analyses the approaches used by the 10 Swiss NGOs currently" date="20 Feb,2019" header="Accountability to Affected People"/>
+                    <ResourceCard image="/assets/book4.png" desc="After a devastating plague, two communities emerge as bastions of  " date="Nov 30, 2018" header="Accountability to Affected People"/>
+                    <div className={styles.viewmor}>
+                        <Image  src="/assets/svgs/chevron2.svg" alt="heroimage" height="16px" width="16px" />
+                        <p className={styles.readmoreprojects}>
+                            VIEW MORE GALLERIES
+                        </p>
+                    </div>    
                 </div>
                 
             </div>
