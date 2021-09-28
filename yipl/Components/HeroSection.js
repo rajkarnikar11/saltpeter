@@ -1,13 +1,28 @@
-import React from 'react'
+import React, {useState, useRef, useEffect } from 'react';
 import Image from 'next/dist/client/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Slider1 from '../public/assets/slider/sliderimage1.png'
 import styles from '../styles/HeroSection.module.css';
+import {gsap,Power3} from "gsap";
 import SwiperCore, { Navigation,Parallax,EffectFade ,Autoplay,Mousewheel, Pagination, Scrollbar, A11y } from 'swiper/core';
 SwiperCore.use([Navigation ,Parallax,Autoplay, EffectFade,Mousewheel, Pagination, Scrollbar, A11y]);
 
 
 function HeroSection() {
+    let head=useRef(null);
+    var tl = gsap.timeline();
+    useEffect(()=>{
+       
+        tl.from(head,.7, {y:-700,delay:.7})
+        // .to(head,.2, {y:-25,})    
+        // .to(head,.1, { y:0})
+        // .to(head,.15, {y:-10,})
+        // .to(head,.1, { y:0})
+        // .to(head,.1, {y:-5,})
+        // .to(head,.05, { y:0})
+        // .to(head,.02, {y:-2,})
+        // .to(head,.015, { y:0})  
+    },[])
     return (
         <div className={styles.container}>
             <Swiper style={{height: "100%",width:"100%"}}
@@ -39,7 +54,7 @@ function HeroSection() {
                         <Image  src="/assets/slider/sliderimage1.png" alt="heroimage"layout="fill" /> 
                     </SwiperSlide>
             </Swiper>
-            <div className={styles.msgContainer}>
+            <div ref={el=>head=el} className={styles.msgContainer}>
                 <h1 className={styles.header}>
                     <div>
                         Featured Posts

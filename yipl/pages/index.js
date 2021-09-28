@@ -1,6 +1,7 @@
 import React from 'react'
 import ClientTestimonials from '../Components/ClientTestimonials'
 import FooterBig from '../Components/FooterBig'
+import FooterSmall from '../Components/FooterSmall'
 import Gallery from '../Components/Gallery'
 import HeroSection from '../Components/HeroSection'
 import MeetDogs from '../Components/MeetDogs'
@@ -26,6 +27,7 @@ function index() {
       <ClientTestimonials/>
       <TrustedPartners/>
       <FooterBig/>
+      <FooterSmall/>
     </div>
   )
 }

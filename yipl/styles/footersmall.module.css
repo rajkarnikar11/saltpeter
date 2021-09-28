@@ -1,0 +1,62 @@
+.container{
+    width: 100%;
+    height: 90px;
+    justify-content:space-around ;
+    display: flex;
+    align-items: center;
+    background: #171717;
+}
+.logosection{
+    display: flex;
+    justify-content: space-between;
+}
+.follow{
+    font-family: Overpass;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    /* identical to box height, or 100% */
+    margin-right:30px ;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+
+}
+.logo{
+    margin-right: 10px;
+    cursor: pointer;
+    opacity: .8; 
+    transition-duration: .3s;  
+}
+.logo:hover{
+    opacity: 1;
+    transform: scale(1.2);
+}
+.logocontainer{
+    display: flex;
+    
+}
+.desc{
+    font-family: Overpass;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+@media only screen and (max-width: 1250px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+}

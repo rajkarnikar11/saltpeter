@@ -1,14 +1,57 @@
 import React, {useState, useRef, useEffect } from 'react';
-
-
-
+import {gsap,Power3} from "gsap";
 import styles from '../styles/RecentNews.module.css'
 import Image from 'next/dist/client/image';
 
 function RecentNews() {
+    let overlay1= useRef(null);
+    let overlay3= useRef(null);
+    let overlay2= useRef(null);
+    const expand1 =()=>{
+        
+        gsap.to(overlay1,.5, {css:{height:"100%",width:"100%",cursor:"pointer"}}  )
+       
+                     
     
+    }
+    const expand2 =()=>{
+        
+        gsap.to(overlay2,.5, {css:{height:"100%",width:"100%",cursor:"pointer"}}  )
+       
+                     
+    
+    }
+    const shrink1 =()=>{
+        
+        gsap.to(overlay1,.5, {css:{width:"454px", height:"314px",cursor:"pointer"}}  )
+       
+                     
+    
+    }
+   
+    const shrink2 =()=>{
+        
+        gsap.to(overlay2,.5, {css:{width:"454px", height:"314px",cursor:"pointer"}}  )
+       
+                     
+    
+    }
+    const shrink3 =()=>{
+        
+        gsap.to(overlay3,.5, {css:{width:"454px", height:"314px",cursor:"pointer"}}  )
+       
+                     
+    
+    }
+    const expand3 =()=>{
+        
+        gsap.to(overlay3,.5, {css:{height:"100%",width:"100%",cursor:"pointer"}}  )
+       
+                     
+    
+    }
     return (
-        <div  className={styles.container}>
+        <div   className={styles.container}>
             
             <div className={styles.partation2}>
                 <div className={styles.left2}>
@@ -19,9 +62,9 @@ function RecentNews() {
                             <p1 className={styles.desc}> More than 22,500 dogs live on the streets of Kathmandu, Nepal, and many suffer from starvation, infected open sores, mange, and other injuries and illnesses. </p1>
                         </div>
                     </div>
-                    <div className={styles.recentcontainer}>
-                        <Image src="/assets/recent1.png" height="504px" width="574px"/>
-                        <div className={styles.recentoverlay}>
+                    <div onMouseEnter={expand1} onMouseLeave={shrink1} className={styles.recentcontainer}>
+                        <Image src="/assets/recent1.png" height="504px" alt="dogs" width="574px"/>
+                        <div  ref={el=>overlay1=el} className={styles.recentoverlay}>
                             <div className={styles.rdateoverlay}>
                                 <div style={{display:"flex"}}>
                                     <Image  src="/assets/svgs/clock.svg" alt="cl0ck" height="12.19px" width="12.19px" />
@@ -47,9 +90,9 @@ function RecentNews() {
                     </div>
                 </div>
                 <div>
-                <div className={styles.recentcontainer}>
-                        <Image src="/assets/recent2.png" height="504px" width="574px"/>
-                        <div className={styles.recentoverlay}>
+                <div onMouseEnter={expand2} onMouseLeave={shrink2} className={styles.recentcontainer}>
+                        <Image src="/assets/recent2.png" alt="dog" height="504px" width="574px"/>
+                        <div ref={el=>overlay2=el} className={styles.recentoverlay}>
                             <div className={styles.rdateoverlay}>
                                 <div style={{display:"flex"}}>
                                     <Image  src="/assets/svgs/clock.svg" alt="cl0ck" height="12.19px" width="12.19px" />
@@ -67,9 +110,9 @@ function RecentNews() {
                             </div>
                         </div>
                     </div>
-                    <div className={styles.recentcontainer}>
-                        <Image src="/assets/recent3.png" height="504px" width="574px"/>
-                        <div className={styles.recentoverlay}>
+                    <div onMouseEnter={expand3} onMouseLeave={shrink3} className={styles.recentcontainer}>
+                        <Image src="/assets/recent3.png" alt="dog" height="504px" width="574px"/>
+                        <div ref={el=>overlay3=el} className={styles.recentoverlay}>
                             <div className={styles.rdateoverlay}>
                                 <div style={{display:"flex"}}>
                                     <Image  src="/assets/svgs/clock.svg" alt="cl0ck" height="12.19px" width="12.19px" />

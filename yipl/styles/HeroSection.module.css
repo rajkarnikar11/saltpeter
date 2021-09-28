@@ -1,6 +1,7 @@
 .container{
     height: 88vh;
     position: relative;
+    z-index: 2;
     
     
 }

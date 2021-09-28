@@ -1,9 +1,31 @@
-import React from 'react'
+import React, {useState, useRef, useEffect } from 'react';
 import styles from '../styles/footerbig.module.css'
 import Image from 'next/dist/client/image';
+import {gsap,Power3} from "gsap";
 function FooterBig() {
+    let top= useRef(null);
+    var tl2 = gsap.timeline({ repeat: -1 });
+    const move  =()=>{
+        tl2.fromTo(top,.7,{y:0},{y:-25})
+            tl2.play();
+    }     
+    const out  =()=>{
+        tl2.pause();
+    }
+
+    
+    const scrollToTop =()=>{
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+      }
     return (
         <div className={styles.container}> 
+            <div onMouseEnter={move} onMouseLeave={out}  onClick={scrollToTop} className={styles.topcontainer}>
+                <h1  ref={el=>top=el} className={styles.arrow}>↑</h1>
+                <p1 className={styles.top}>TOP</p1>
+            </div>
             <div>
                 <div className={styles.header}>
                     <Image className={styles.dog}  src="/assets/svgs/dog.svg" height="30px" width="28px" alt="doggie" />
@@ -41,7 +63,7 @@ function FooterBig() {
                 
 
             </div>
-            <div >
+            <div className={styles.let} >
                 <h1 className={styles.main}>Newletter</h1>
                 <div className={styles.emailcontainer}>
                     <input className={styles.email} placeholder="Email"/>
