@@ -6,6 +6,8 @@ import CardSmall from './CardSmall';
 import TeamCard from './TeamCard';
 import CardSlider from './CardSlider';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import Head from 'next/head'
+import ScrollAnimation from 'react-animate-on-scroll';
 
 
 import SwiperCore, { Navigation,Parallax,EffectFade ,Autoplay,Mousewheel, Pagination, Scrollbar, A11y } from 'swiper/core';
@@ -14,14 +16,17 @@ SwiperCore.use([Navigation ,Parallax,Autoplay, EffectFade,Mousewheel, Pagination
 function ClientTestimonials() {
     return (
         <div className={styles.container}>
-            <div className={styles.topSection} >
+            <Head>
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
+            </Head>
+            <ScrollAnimation  duration={1} animateOnce={true} delay={0}  animateIn="fadeInUp" className={styles.topSection} >
                 <div className={styles.line} />
                     <div>
                         <h1 className={styles.header} >Client Testimonials.</h1>
                         <p1 className={styles.desc}>People are saying great things about us. ️</p1>
                     </div>
-            </div>
-            <div className={styles.slidersectionbig}>
+            </ScrollAnimation>
+            <ScrollAnimation  duration={1} animateOnce={true} delay={500}  animateIn="fadeIn" className={styles.slidersectionbig}>
                 <Swiper 
                     spaceBetween={0}
                     effect="coverflow"
@@ -53,8 +58,8 @@ function ClientTestimonials() {
                         </SwiperSlide>
                
                 </Swiper>
-            </div>
-            <div className={styles.slidersectionsmall}>
+            </ScrollAnimation>
+            <ScrollAnimation  duration={1} animateOnce={true} delay={200}  animateIn="fadeInUp" className={styles.slidersectionsmall}>
                 <Swiper 
                     spaceBetween={0}
                     effect="coverflow"
@@ -86,7 +91,7 @@ function ClientTestimonials() {
                         </SwiperSlide>
                 
                 </Swiper>
-            </div>
+            </ScrollAnimation>
             
             
         </div>

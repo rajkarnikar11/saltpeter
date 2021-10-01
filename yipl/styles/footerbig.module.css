@@ -104,6 +104,10 @@
     border-radius: 62px;
     align-items: center;
     justify-content: space-between;
+    opacity: .8;
+}
+.emailcontainer:hover{
+    opacity: 1;
 }
 .pulse{
     opacity: .8;    
@@ -152,12 +156,66 @@
         height: 100%;
         padding-bottom: 30px;
         text-align: center;
+        position: relative;
     }
     .let{
         display: flex;
+        flex-direction: column;
     
     }
     .emailcontainer{
         margin-left: 10px;
+    }
+    .headercontainer{
+        margin: auto;
+       
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .secondary{
+        
+        display: flex;
+        justify-content: center;
+        margin: 5px;
+    }
+    .main{
+        text-align: center;    
+        margin: auto;        
+        text-align: center;
+      
+        align-items: center;
+        padding: 15px;
+        
+    }
+    .listcontainer{
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    
+    .topcontainer{
+        position: absolute;
+        right: 10px;
+        bottom: 15px;
+
+
+    }
+    .top{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 16px;
+        /* identical to box height, or 100% */
+        position: absolute;
+        margin-top: -25px;
+        margin-left: -15px;
+        color: #808080;
+    
+        transform: rotate(-90deg);
+    
+
     }
 }

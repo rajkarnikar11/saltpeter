@@ -13,7 +13,7 @@ function HeroSection() {
     var tl = gsap.timeline();
     useEffect(()=>{
        
-        tl.from(head,.7, {y:-700,delay:.7})
+        tl.from(head,.85, {y:-700,delay:1})
         // .to(head,.2, {y:-25,})    
         // .to(head,.1, { y:0})
         // .to(head,.15, {y:-10,})

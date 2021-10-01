@@ -26,7 +26,7 @@ function FooterBig() {
                 <h1  ref={el=>top=el} className={styles.arrow}>↑</h1>
                 <p1 className={styles.top}>TOP</p1>
             </div>
-            <div>
+            <div className={styles.headercontainer}>
                 <div className={styles.header}>
                     <Image className={styles.dog}  src="/assets/svgs/dog.svg" height="30px" width="28px" alt="doggie" />
                     <h1 className={styles.saltpeter}>Saltpeter</h1>
@@ -44,7 +44,7 @@ function FooterBig() {
                     <p1 className={styles.info2}>info@ngodistro.com</p1>
                 </div>
             </div>
-            <div >
+            <div className={styles.listcontainer} >
                 <h1 className={styles.main}>About</h1>
                 <p1 className={styles.secondary}>Saltpeater</p1>
                 <p1 className={styles.secondary}>Our Team</p1>
@@ -54,7 +54,7 @@ function FooterBig() {
                 
 
             </div>
-            <div >
+            <div className={styles.listcontainer} >
                 <h1 className={styles.main}>Resources</h1>
                 <p1 className={styles.secondary}>Research & Reports</p1>
                 <p1 className={styles.secondary}>Projects</p1>

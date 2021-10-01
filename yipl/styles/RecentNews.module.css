@@ -121,7 +121,7 @@
         box-shadow: black;
         display: flex;
         align-items: center;
-    
+        margin-right:50px;
         color: #808080;
         margin-bottom: 25px;
     }

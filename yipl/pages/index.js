@@ -12,10 +12,14 @@ import RecentProject from '../Components/RecentProject'
 import TrustedPartners from '../Components/TrustedPartners'
 import UpcommingEvents from '../Components/UpcommingEvents'
 import styles from '../styles/Index.module.css'
+import Head from 'next/head'
 
 function index() {
   return (
     <div  className={styles.container}>
+      <Head>
+        <title>Saltpeter | Home</title>
+      </Head>
       <Navbar/>
       <HeroSection/>
       <MeetDogs/>

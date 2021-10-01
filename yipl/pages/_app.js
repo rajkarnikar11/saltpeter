@@ -2,6 +2,7 @@
 import '../styles/globals.css'
 import "aos/dist/aos.css";
 import 'swiper/scss'
+import "animate.css/animate.min.css";
 import 'swiper/scss/navigation'
 import 'swiper/scss/pagination'
 

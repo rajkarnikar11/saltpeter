@@ -2,6 +2,9 @@
     
     
 }
+.viewmore{
+    display: flex;
+}
 .header1{
     font-family: Overpass;
     font-style: normal;
@@ -115,7 +118,7 @@
     font-size: 12px;
     line-height: 20px;
     /* identical to box height, or 167% */
-
+    
     display: flex;
     align-items: center;
 
@@ -145,7 +148,7 @@
         box-shadow: black;
         display: flex;
         align-items: center;
-    
+        margin-right: 50px;
         color: #808080;
         margin-bottom: 25px;
     }

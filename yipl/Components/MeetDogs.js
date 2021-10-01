@@ -1,9 +1,7 @@
 import React, {useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
-
-
-
-
+import Head from 'next/head'
+import ScrollAnimation from 'react-animate-on-scroll';
 import styles from '../styles/MeetDogs.module.css'
 import Image from 'next/dist/client/image';
 
@@ -12,8 +10,11 @@ function MeetDogs() {
     
     return (
         <div  className={styles.container}>
+            <Head>
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
+            </Head>
             <div  className={styles.partation1}>
-                <div  className={styles.left1} >
+                <ScrollAnimation  duration={.7} animateOnce={true} delay={0}  animateIn="fadeInLeft"  className={styles.left1} >
                     <div  style={{display:"flex"}} >
                         <div className={styles.line} />
                         <div>
@@ -27,15 +28,16 @@ function MeetDogs() {
                             </div>
                         </div>
                     </div>
-                </div>
-                <div  className={styles.right1}>
+                    </ScrollAnimation>
+                <ScrollAnimation animateOnce={true} duration={.7} delay={0}  animateIn="fadeInRight"  className={styles.right1}>
                     <div  className={styles.dogright}>    
                         <Image  src="/assets/dog1.png" alt="heroimage" height="434px" width="570px" />
                     </div>
-                </div>
+                    </ScrollAnimation>
             </div>
             
-        </div>
+            </div>
+
     )
 }
 
